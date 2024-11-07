@@ -28,6 +28,7 @@ function App() {
     router = createBrowserRouter(
       createRoutesFromElements(
         <Route path="/" elemenet={<StartPage />}>
+          <Route path="/" element={<HomePage />} />
           <Route path="home" element={<HomePage />} />
           <Route path="product/:pid" element={<ProductByIdPage />} />
           <Route path="products" element={<ProductsPage />} />
